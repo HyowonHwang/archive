@@ -11,3 +11,7 @@
 ExoPlayer supports MPEG DASH, however, there are some of limits.
 Firstly, it does not support mpeg2ts based DASH Profile and support fMP4 and WebM.
 [reference](https://exoplayer.dev/dash.html)
+
+
+# Webrtc
+https://www.slideshare.net/ksdc2019/web-rtc-trouble-shooting
