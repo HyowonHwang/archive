@@ -1,3 +1,7 @@
+# Codec MimeTypes
+https://cconcolato.github.io/media-mime-support/#video/mp4;%20codecs=%22avc1.64000d%22
+
+
 # Mpeg Dash
 ## Metric(WebSocket)
 ```xml
