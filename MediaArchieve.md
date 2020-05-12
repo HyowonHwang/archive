@@ -53,3 +53,7 @@ https://www.slideshare.net/ksdc2019/web-rtc-trouble-shooting
 
 # Webvtt
 https://www.slideshare.net/ksdc2019/web-rtc-trouble-shooting
+
+
+# HLS include Low-Latency HLS
+https://www.wowza.com/blog/ietf-incorporates-low-latency-hls-into-the-hls-spec
