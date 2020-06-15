@@ -24,3 +24,20 @@ ffmpeg -y -i TheLionKing_TLR-1_4K_40_AC3_51-thedigitaltheater.mp4 \
 
 ```
 
+# DASH Packager
+```
+docker run -v /host_media_path/:/media -it --rm google/shaka-packager
+```
+
+## SHAKA DASH 
+```
+ packager \
+  in=tears-of-steel-aac-128k.mp4,stream=audio,output=mpd/audio_aac.mp4 \
+  in=tears-of-steel-ac3-448k.mp4,stream=audio,output=mpd/audio_ac_3.mp4 \
+  in=tears-of-steel-avc1-400k.mp4,stream=video,output=mpd/h264_400k.mp4 \
+  in=tears-of-steel-avc1-750k.mp4,stream=video,output=mpd/h264_750k.mp4 \
+  in=tears-of-steel-avc1-1000k.mp4,stream=video,output=mpd/h264_1000k.mp4 \
+  in=tears-of-steel-avc1-1500k.mp4,stream=video,output=mpd/h264_1500k.mp4 \
+  --mpd_output mpd/h264_multi_audio_codec.mpd
+```
+
