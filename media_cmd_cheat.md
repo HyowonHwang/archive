@@ -41,3 +41,18 @@ docker run -v /host_media_path/:/media -it --rm google/shaka-packager
   --mpd_output mpd/h264_multi_audio_codec.mpd
 ```
 
+
+### Reference
+https://github.com/google/shaka-packager/blob/master/docs/source/docker_instructions.md
+https://google.github.io/shaka-packager/html/tutorials/dash.html
+  
+https://trac.ffmpeg.org/wiki/Encode/HighQualityAudio
+https://trac.ffmpeg.org/wiki/Map
+https://nicewoong.github.io/development/2017/10/09/basic-usage-for-docker/
+
+HLS 
+https://ffmpeg.org/ffmpeg-formats.html#hls-2
+https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/StreamingMediaGuide/UsingHTTPLiveStreaming/UsingHTTPLiveStreaming.html
+http://hlsbook.net/segmenting-video-with-ffmpeg/
+  
+
