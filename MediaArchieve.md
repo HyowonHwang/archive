@@ -57,3 +57,6 @@ https://www.slideshare.net/ksdc2019/web-rtc-trouble-shooting
 
 # HLS include Low-Latency HLS
 https://www.wowza.com/blog/ietf-incorporates-low-latency-hls-into-the-hls-spec
+
+#ffmpeg
+https://medium.com/hamza-solutions/ffmpeg-tool-with-flutter-ac1d68c2fddb
