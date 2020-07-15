@@ -8,3 +8,6 @@
       - https://tfhub.dev/
       - Model 이 아직 풍부 하진 않음(Resnet50, MobileNet 등등은 다 구비) Quantizered 되어 있는 모델을 선택
    - 
+# IDEA
+ - 시청 패턴을 활용 한 추천
+ - 어떤 컨텐츠를 좋아 하느냐.. 등등
