@@ -27,3 +27,6 @@
 * 빠르고 가볍다?
 * 활용도 측면에서 Object detection , Segmentation 도 된다. 
 * Global Context 및 Feature 에서 Prediction 하는 거라 Segmentation 과 비슷하다고 볼수 있을 거 같음
+
+## 궁금한점 
+- 모든 테스트 셋에 대하여 클래스 
