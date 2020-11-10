@@ -46,24 +46,25 @@
   - 번역기
   - encoder(Input 을 이해하는 역할 ) -> decoder( Input 이해한 것을 바탕으로 Output 생성  )
      * 각각이 의미 있음 encoder 만 사용하는(BERT) decoder 만 사용하는(GPT)
-
-## Self-Attention
-  - 각 단어들이, 문장안의 다른 단어들과 어떤 관계를 가지는 추출
-  - NxN
-  - Feed Forward NN 은 비선형 적인 
-  - 멀리 있는 것도 같이 보는 것
-  - 기존 NLP 는 시쿼셜 했음
   
 ## Word Embeding
   - on hot encoding -> 
   - Self Attention 을 통해서 Contextual Word Embeding 이 나옴
   
-## Self-Attention
+## Self-Attention(Intra-Attention)
+  - 각 단어들이, 문장안의 다른 단어들과 어떤 관계를 가지는 추출
+  - NxN
+  - Feed Forward NN 은 비선형 적인 
+  - 멀리 있는 것도 같이 보는 것
+  - 기존 NLP 는 시쿼셜 했음
+
+### 동작
  -  image to sentence lstm 돌면서 생성  CNN -> LSTM 하는 걸 Attention 나옴
  - Attention
     * 피상적으로 이해 하기로는 특정 상태를 이해하기 위해서 그것만 강조 하는 Elephant를 알려면 Elephant 만 알면된다.
     * 강조 되는 포커스를 가한다.
- - 
+ - Queries -> key -> values 를 구하는 과정
+ -
      
      
      
