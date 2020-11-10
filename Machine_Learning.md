@@ -53,18 +53,51 @@
   
 ## Self-Attention(Intra-Attention)
   - 각 단어들이, 문장안의 다른 단어들과 어떤 관계를 가지는 추출
-  - NxN
   - Feed Forward NN 은 비선형 적인 
-  - 멀리 있는 것도 같이 보는 것
+  - 멀리 있는 것도 같이 보는 것, 관계를 이해하는 것
   - 기존 NLP 는 시쿼셜 했음
+   
 
 ### 동작
  -  image to sentence lstm 돌면서 생성  CNN -> LSTM 하는 걸 Attention 나옴
  - Attention
     * 피상적으로 이해 하기로는 특정 상태를 이해하기 위해서 그것만 강조 하는 Elephant를 알려면 Elephant 만 알면된다.
     * 강조 되는 포커스를 가한다.
- - Queries -> key -> values 를 구하는 과정
- -
+ - Queries -> key -> values(나오는 Embeding vector) 를 구하는 과정
+    -  너/ 랑 
+     - Thinking / Machine  -> Thinking 은 Machine 을 어떻게 생각하는지
+ - 
+
+### Multi Headed Self-Attention
+ - 반복, 여러개의 어텐션을 줘서 포커스
+
+## Position Encoding
+* word embeding 만으로 위치를 모름
+* 단어의 위치를 Position Encoding 해서 넣어줌
+  -> 포지션을 해석할 수 있는 여지가 있음
+  -> 최신은 거의 다 넣는다.
+  
+
+## Residual Connection
+* Input + 나온 데이터를 합해주는 것
+* 단순한 건 resnet 처럼 SKIP 넘어 가는 것
+
+
+## Layer Normalization
+*  개별 데이터의 통계
+
+
+###### 여기까지 Encoder
+
+
+## Decoder
+* Translation 이나 language generation에 사용되는 파트
+* Encoder 의 Self Attention 을 변경 
+  * Key , value 는 encoder 에서 나온 값을 사용
+  * Query 는 문장에 대해서 어떻게 생각해 
+
+
+##### 궁금 한점
      
      
      
