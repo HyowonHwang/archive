@@ -6,3 +6,9 @@
   
 # Http-flv
 https://www.yanxurui.cc/posts/server/2017-11-25-http-flv/
+
+flv HEVC Spec 에는 없음
+https://www.adobe.com/content/dam/acom/en/devnet/flv/video_file_format_spec_v10.pdf
+
+일부는 codecID 12로 해서 HEVC 를 구분
+https://github.com/MediaArea/MediaInfoLib/blob/2f3998512ec3cc6f55c0905eb993bfce95a9a3b2/Source/MediaInfo/Multiple/File_Flv.cpp
