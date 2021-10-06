@@ -7,6 +7,9 @@ ffmpeg -i video.mp4 -i audio.wav -c:v copy -c:a aac output.mp4
 # X265 option
 https://x265.readthedocs.io/en/master/cli.html#profile-level-tier
 
+# x265 TAG
+ffmpeg -i input-hev1.mp4 -c:v copy -tag:v hvc1 -c:a copy output-hvc1.mp4
+
 # To HLS
 ```
 ffmpeg -y -i TheLionKing_TLR-1_4K_40_AC3_51-thedigitaltheater.mp4 \
