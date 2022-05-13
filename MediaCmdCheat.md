@@ -13,6 +13,9 @@ ffmpeg -i input-hev1.mp4 -c:v copy -tag:v hvc1 -c:a copy output-hvc1.mp4
 # h264 extract
 ffmpeg -i test.flv -vcodec copy -an -bsf:v h264_mp4toannexb test.h264
 
+# Audio VolumeDetect
+ffmpeg -i a.mp4 -filter:a volumedetect -f null /dev/null\n
+
 # To HLS
 ```
 ffmpeg -y -i TheLionKing_TLR-1_4K_40_AC3_51-thedigitaltheater.mp4 \
