@@ -16,6 +16,15 @@ ffmpeg -i test.flv -vcodec copy -an -bsf:v h264_mp4toannexb test.h264
 # Audio VolumeDetect
 ffmpeg -i a.mp4 -filter:a volumedetect -f null /dev/null\n
 
+# WavePic
+ffmpeg -i 1080.stream_3508212700_1638699746687_2594_0_1297.ts\?bitrate=502806\&filetype=.ts -filter_complex "showwavespic=s=640x120" -frames:v 1 output.png
+ffmpeg -i 1080.stream_3508212700_1638699746687_2594_0_1297.ts\?bitrate=502806\&filetype=.ts -filter_complex "aformat=channel_layouts=mono,showwavespic=s=640x120" -frames:v 1 output_mono.png
+ffmpeg -i 1080.stream_3508212700_1638699746687_2594_0_1297.ts\?bitrate=502806\&filetype=.ts -filter_complex "showwavespic=s=640x240:split_channels=1" -frames:v 1 output_stereo.png
+ffmpeg -i 1080.stream_1150167119_1638699824687_2672_0_1336.ts\?bitrate=452234\&filetype=.ts -filter_complex "aformat=channel_layouts=mono,showwavespic=s=640x120" -frames:v 1 output.png
+ffmpeg -i 1080.stream_1150167119_1638699824687_2672_0_1336.ts\?bitrate=452234\&filetype=.ts -filter_complex "showwavespic=s=640x240:split_channels=1" -frames:v 1 output.png\n
+ffmpeg -i 1080.stream_3508212700_1638699746687_2594_0_1297.ts\?bitrate=502806\&filetype=.ts -c:v copy -af "pan=mono|c0=FR" mono_FR.ts
+ffmpeg -i 1080.stream_3508212700_1638699746687_2594_0_1297.ts\?bitrate=502806\&filetype=.ts -filter_complex "showwavespic=s=640x240:split_channels=1" -frames:v 1 output_mono_FR.png
+
 # To HLS
 ```
 ffmpeg -y -i TheLionKing_TLR-1_4K_40_AC3_51-thedigitaltheater.mp4 \
