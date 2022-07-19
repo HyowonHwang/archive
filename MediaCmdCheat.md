@@ -65,6 +65,10 @@ docker run -v /host_media_path/:/media -it --rm google/shaka-packager
   --mpd_output mpd/h264_multi_audio_codec.mpd
 ```
 
+## MPD Bento4
+```
+./bin/mp4dash --verbose -f -o output1 --mpd-name=manifest.mpd --no-split --use-segment-timeline test_media/fragmented_tears-of-steel-aac-128k.mp4 test_media/fragmented_tears-of-steel-avc1-1000k.mp4
+```
 
 ### Reference
 https://github.com/google/shaka-packager/blob/master/docs/source/docker_instructions.md
