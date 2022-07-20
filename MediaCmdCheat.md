@@ -70,6 +70,11 @@ docker run -v /host_media_path/:/media -it --rm google/shaka-packager
 ./bin/mp4dash --verbose -f -o output1 --mpd-name=manifest.mpd --no-split --use-segment-timeline test_media/fragmented_tears-of-steel-aac-128k.mp4 test_media/fragmented_tears-of-steel-avc1-1000k.mp4
 ```
 
+### Frame Viewer
+```
+ffprobe -show_frames input.h264 | grep pict_type
+```
+
 ### Reference
 https://github.com/google/shaka-packager/blob/master/docs/source/docker_instructions.md
 https://google.github.io/shaka-packager/html/tutorials/dash.html
