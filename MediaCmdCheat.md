@@ -16,6 +16,9 @@ ffmpeg -i test.flv -vcodec copy -an -bsf:v h264_mp4toannexb test.h264
 # Audio VolumeDetect
 ffmpeg -i a.mp4 -filter:a volumedetect -f null /dev/null\n
 
+# Audio Measure Loudness
+ffmpeg -i input.mp3 -filter_complex ebur128=peak=true -f null -
+
 # WavePic
 ```
 ffmpeg -i 1080.stream_3508212700_1638699746687_2594_0_1297.ts\?bitrate=502806\&filetype=.ts -filter_complex "showwavespic=s=640x120" -frames:v 1 output.png
